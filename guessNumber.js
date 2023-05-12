@@ -14,6 +14,7 @@
 
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
+let highScore = 0;
 
 
 document.querySelector(".check").addEventListener("click" , function() {
@@ -36,6 +37,10 @@ document.querySelector(".check").addEventListener("click" , function() {
     document.querySelector(".Highscore").textContent = 20 ;
     const playersName = prompt ("Enter Your Name")
     document.querySelector(".name").textContent = `🤸🎊Congratulations ${playersName }, You won this game🎉✨🏆 `
+
+    if (score > highScore) {
+         document.querySelector(".Highscore").textContent = score
+    }
 
 
   
