@@ -36,7 +36,7 @@ document.querySelector(".check").addEventListener("click" , function() {
     document.querySelector(".guess").style.backgroundColor = "Green"
     document.querySelector(".Highscore").textContent = 20 ;
     const playersName = prompt ("Enter Your Name")
-    document.querySelector(".name").textContent = `🤸🎊Congratulations ${playersName }, You won this game🎉✨🏆 `
+    document.querySelector(".name").textContent = `Congratulations ${playersName }, You won this game 🏆 `
 
     if (score > highScore) {
          document.querySelector(".Highscore").textContent = score
